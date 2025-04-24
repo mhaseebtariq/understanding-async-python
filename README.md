@@ -4,7 +4,7 @@ We have set up 2 applications:
 2. `api-external` - The external api, that our `api` makes calls to 
 
 ## Setup
-* NOTE: Run the code on an instance with at least 4 or more CPU cores
+* **NOTE**: Run the code on an instance with at least 4 or more CPU cores
   * 1 for each api
   * 1 for the `test_executor.py`
 * Setup and activate a Python 3.11+ environment
