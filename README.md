@@ -1,4 +1,4 @@
-# Understanding Python Asynchronous Paradigm Using FastAPI Examples
+# Understanding Python's Asynchronous Paradigm Using FastAPI Examples
 We have set up 2 applications:
 1. `api` - The api where we are defining `async` and `sync` http endpoints
 2. `api-external` - The external api, that our `api` makes calls to 
