@@ -19,3 +19,22 @@ We have set up 2 applications:
 * Open a new terminal
   * Activate the Python environment
   * `python tests_executor.py "1,2,3,4,5,6,7,8,9,10,11"`
+
+### Example Output
+```
+>> python tests_executor.py "1,2,3,4,5,6,7,8,9,10,11"
+
+====================================================================================================
+100 calls to `sync` in 16 seconds!
+100 calls to `sync__external_sync` in 16 seconds!
+10 calls to `async_without_async_code` in 30 seconds!
+100 calls to `async_with_async_code_1` in 4 seconds!
+50 calls to `async_with_async_code_1` + 50 calls to `async_with_async_code_2` in 4 seconds!
+50 calls to `sync` in 10 seconds!
+50 calls to `async_with_async_code_1` in 4 seconds!
+50 calls to `sync` + 50 calls to `async_with_async_code_1` in 7 seconds!
+50 calls to `sync__external_sync` + 50 calls to `async_with_async_code_1` in 7 seconds!
+50 calls to `sync_cpu_bound` in 18 seconds!
+50 calls to `sync_cpu_bound` + 50 calls to `async_with_async_code_1` in 24 seconds!
+====================================================================================================
+```
